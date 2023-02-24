@@ -12,6 +12,7 @@ import { MaterialModule } from './material/material.module';
 import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServicesComponent } from './pages/home/services/services.component';
+import { DetailsComponent } from './pages/home/services/details/details.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ServicesComponent } from './pages/home/services/services.component';
     AboutComponent,
     ContactComponent,
     ContactBoxComponent,
-    ServicesComponent
+    ServicesComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

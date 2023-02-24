@@ -13,7 +13,10 @@ export class DetailsComponent {
   constructor(private route:ActivatedRoute,private hs:HomeService) {
      this.route.params.subscribe(params=> {
          this.id=params["id"]
-        
+         this.hs.getDetails(this.id).subscribe({
+          next:(x:any)=>{this.record=x},
+          error:(error:any)=>this.record={title:"",details:[]}
+        })
 
      })
    }

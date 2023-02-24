@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 
 @Component({
   selector: 'app-feedback',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./feedback.component.css']
 })
 export class FeedbackComponent {
-
+  @Input("feedback") current:any;
 }

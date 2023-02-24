@@ -11,6 +11,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { MaterialModule } from './material/material.module';
 import { ContactBoxComponent } from './pages/contact/contact-box/contact-box.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ServicesComponent } from './pages/home/services/services.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    ContactBoxComponent
+    ContactBoxComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

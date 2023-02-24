@@ -15,6 +15,7 @@ import { ServicesComponent } from './pages/home/services/services.component';
 import { DetailsComponent } from './pages/home/services/details/details.component';
 import { FeedbackComponent } from './pages/about/feedback/feedback.component';
 import { FilterFeedbackPipe } from './pipes/filter-feedback.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { FilterFeedbackPipe } from './pipes/filter-feedback.pipe';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,7 @@ export class AboutComponent {
   feedbacks:any; 
   types:string[]=["All","Branding and Communication","Inbound & Content Marketing","Film & Webinar","Digital Marketing","ECommerce & Websites",
   "Market Analysis"]
+  choice:string="All"
   constructor(public fs:FeedbackService){
      fs.getFeedbacks().subscribe(
           {

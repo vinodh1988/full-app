@@ -5,8 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterFeedbackPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(feedbacks: any, type: any): any {
+     if(type==="All")
+        return feedbacks;
+     else {
+         return feedbacks.filter((x:any)=>x.type==type)
+     }
   }
 
 }

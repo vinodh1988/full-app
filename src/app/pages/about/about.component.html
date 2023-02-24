@@ -14,8 +14,10 @@ When a visitor wants to learn more about you or your business, it's the page the
 </p>
 
 <h2>Customer Feedback</h2>
-
-<app-feedback *ngFor="let x of feedbacks" 
+<select [(ngModel)]="choice">
+    <option *ngFor="let x of types">{{x}}</option>
+</select>
+<app-feedback *ngFor="let x of feedbacks | filterFeedback:choice" 
 [feedback]="x">
 </app-feedback>
 </div>

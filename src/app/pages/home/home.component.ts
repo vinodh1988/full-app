@@ -14,6 +14,6 @@ export class HomeComponent {
                 next: (data:any)=>this.services=data,
                 error: ()=>this.services=[]
               }
-        )
+      )
     }
 }

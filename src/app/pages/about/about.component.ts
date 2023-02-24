@@ -9,6 +9,8 @@ import { FeedbackComponent } from './feedback/feedback.component';
 })
 export class AboutComponent {
   feedbacks:any; 
+  types:string[]=["All","Branding and Communication","Inbound & Content Marketing","Film & Webinar","Digital Marketing","ECommerce & Websites",
+  "Market Analysis"]
   constructor(public fs:FeedbackService){
      fs.getFeedbacks().subscribe(
           {

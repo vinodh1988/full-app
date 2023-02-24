@@ -9,8 +9,13 @@ They may go by different labels—“About”, “Story”, “Mission”—but 
 <p>
 When a visitor wants to learn more about you or your business, it's the page they'll look for.
 </p>
+<p>
+    Our revenue is {{"100" | currency:"EUR"}} Million
+</p>
 
 <h2>Customer Feedback</h2>
 
-
+<app-feedback *ngFor="let x of feedbacks" 
+[feedback]="x">
+</app-feedback>
 </div>

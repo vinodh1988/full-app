@@ -15,7 +15,8 @@ import { ServicesComponent } from './pages/home/services/services.component';
 import { DetailsComponent } from './pages/home/services/details/details.component';
 import { FeedbackComponent } from './pages/about/feedback/feedback.component';
 import { FilterFeedbackPipe } from './pipes/filter-feedback.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormComponent } from './pages/about/form/form.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     ServicesComponent,
     DetailsComponent,
     FeedbackComponent,
-    FilterFeedbackPipe
+    FilterFeedbackPipe,
+    FormComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
